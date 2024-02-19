@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./responsible/index.css">
+  <title>Desgin</title>
+</head>
+<body>
+    <div class="container-field">
+        <div class="row title">
+            <div class="col-lg-3">
+                <div class="web">
+                    <h2 class="title-web" style="color: white;">
+                        WEB <b class="reference">REFERENCE</b>
+                    </h2>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-7">
+                <div class="standard">
+                    <h2 class="title-right" style="color: aqua;">STANDARD</h2>
+                    <h2 class="title-right">PROFESSIONAL</h2>
+                    <h2 class="title-right">MASTER</h2>
+                </div>
+            </div>
+        </div>
+        <div class="header-title">
+            
+            
+        </div>
+        <div class="row title">
+            <div class="col-lg-4-content" id="content-frontend">
+                <h1 class="content"  onclick="changeState()">
+                    FRONTEND
+                </h1>
+            </div>
+            <div class="col-lg-4-content-animation" id="content-frontend-handphone">
+                <h1 class="content" id="conntent-a" onclick="changeState_handphone()">
+                    FRONTEND
+                </h1>
+            </div>
+            <div class="fundamentals" id="fundamentals">
+                <h1 class="content-animation" >
+                    FUNDAMENTALS
+                </h1>
+            </div>
+            <div class="advanced" id="advanced">
+                <h1 class="content-animation" >
+                    ADVANCED
+                </h1>
+            </div>
+            <div class="fundamentals-handphone" id="fundamentals-handphone">
+                <h1 class="content-animation-h" style="color: black;">
+                    FUNDAMENTALS
+                </h1>
+            </div>
+            <div class="advanced-handphone" id="advanced-handphone">
+                <h1 class="content-animation-h" style="color: black;" >
+                    ADVANCED
+                </h1>
+            </div>
+            <div class="col-lg-4-content" id="content-backend">
+                <h1 class="content" id="conntent-b">
+                    BACKEND
+                </h1>
+            </div>
+            <div class="col-lg-4-content" id="content-fullstack">
+                <h1 class="content" id="conntent-f">
+                    FULLSTACK
+                </h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const changeState = () =>{
+        var x = document.getElementById("content-frontend");
+        var y = document.getElementById("content-backend");
+        var z = document.getElementById("content-fullstack");
+        var m = document.getElementById("fundamentals");
+        var n = document.getElementById("advanced");
+        if (x.className === "col-lg-4-content") {
+            x.className += " responsive";
+            y.className += " responsive";
+            z.className += " responsive";
+            m.className += " displayBlock";
+            n.className += " displayBlock";
+
+
+        } else {
+            x.className = "col-lg-4-content";
+            y.className = "col-lg-4-content";
+            z.className = "col-lg-4-content";
+            m.className = "fundamentals";
+            n.className = "advanced";
+        }
+    }
+
+    const changeState_handphone = () =>{
+        var x = document.getElementById("content-frontend-handphone");
+        var y = document.getElementById("content-backend");
+        var z = document.getElementById("content-fullstack");
+        var m = document.getElementById("fundamentals-handphone");
+        var n = document.getElementById("advanced-handphone");
+        var q = document.getElementById("conntent-a");
+        var w = document.getElementById("conntent-b");
+        var e = document.getElementById("conntent-f");
+        if (x.className === "col-lg-4-content-animation") {
+            x.className = " responsive-handphone";
+            y.className = " responsive-handphone";
+            z.className = " responsive-handphone";
+            m.className += " displayBlock";
+            n.className += " displayBlock";
+            
+            q.className = "content-responsive";
+            w.className = "content-responsive";
+            e.className = "content-responsive";
+
+        } else {
+            x.className = "col-lg-4-content-animation";
+            y.className = "col-lg-4-content";
+            z.className = "col-lg-4-content";
+            m.className = "fundamentals-handphone";
+            n.className = "advanced-handphone";
+
+            q.className = "content";
+            w.className = "content";
+            e.className = "content";
+        }
+    }
+</script>

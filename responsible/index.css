@@ -1,0 +1,234 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #120e0ef0 !important;
+}
+
+.title{
+    margin-top: 50px;
+    padding: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.standard{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-right{
+    color: white;
+}
+
+.content{
+    padding-top: 200px;
+    color: white;
+    height: 495px;
+    width: 100%;
+    background: #00000096;
+    text-align: center;
+}
+
+
+.content-responsive{
+    padding-top: 18%;
+    color: white;
+    height: 149px;
+    width: 100%;
+    background: #00000096;
+    text-align: center;
+}
+.content-animation{
+    padding-top: 200px;
+    color: #00000096;
+    height: 495px;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+.content:hover{
+    background-color: rgb(49, 185, 185);
+}
+
+.col-lg-4-content{
+    width: 33.3%;
+    cursor: pointer;
+}
+
+.col-lg-4-content-animation{
+    display: none;
+}
+
+.responsive{
+    width: 16%;
+    padding-left: 0px !important;
+    padding-right: 5px !important;
+}
+
+.responsive-handphone{
+    width: 100%;
+    height: 150px;
+    padding: 0px;
+}
+
+.fundamentals, .advanced,.fundamentals-handphone,.advanced-handphone{
+    display: none;
+}
+
+.fundamentals:hover{
+    opacity: 0.8;
+}
+
+.advanced:hover{
+    opacity: 0.8;
+}
+
+.displayBlock{
+    display: block;
+}
+
+.fundamentals {
+    width: 20%;
+    height: 495px;
+    background: white;
+    position: relative;
+    animation-name: A;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    margin-right: 2px;
+  }
+  
+  .fundamentals-handphone {
+    width: 100%;
+    height: 150px;
+    background: white;
+    position: relative;
+    animation-name: A-handphone;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* margin-right: 2px; */
+  }
+
+  .advanced-handphone {
+    width: 100%;
+    height: 150px;
+    background: white;
+    position: relative;
+    animation-name: B-handphone;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* margin-right: 2px; */
+  }
+
+  @keyframes A-handphone {
+    from {top : 0px}
+    to {height: 250px;}
+  }
+
+  @keyframes B-handphone {
+    from {top : 0px}
+    to {height: 250px;}
+  }
+  @keyframes A {
+    from {right : 0px}
+    to {width: 25.9%;}
+  }
+
+  .advanced {
+    width: 20%;
+    height: 495px;
+    background: white;
+    position: relative;
+    animation-name: B;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes B {
+    from {right: 0%;}
+    to {width: 25.9%;}
+  }
+
+  @media screen and (max-width: 420px) {
+    .content-animation-h{
+        margin-top: 3px;
+        padding-top: 35%;
+        color: white;
+        height: 150px;
+        width: 100%;
+        background: white;
+        text-align: center;
+    }
+    .col-lg-4-content-animation{
+        display: block;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .fundamentals{
+        display: none;
+    }
+    .advanced{
+        display: none;
+    }
+    #content-frontend{
+        display: none;
+    }
+    .fundamentals{
+        display: none;
+    }
+    .advanced{
+        display: none;
+    }
+    .reference{
+        display: block !important;
+    }
+    .title{
+        padding: 0px;
+        margin-top: 17px;
+        display: block;
+    }
+    .col-lg-4-content{
+        width: 100%;
+        height: 236px;
+        padding: 0px;
+    }
+
+    .fundamentals{
+        width: 100%;
+        height: 150px;
+        padding: 0px;
+    }
+
+    .advanced{
+        width: 100%;
+        height: 150px;
+        padding: 0px;
+    }
+
+    .content{
+        padding-top: 32%;
+        color: white;
+        height: 228px ;
+        width: 100%;
+        background: #00000096;
+        text-align: center;
+    }
+
+    .content-animation{
+        height: 150px;
+    }
+    .standard {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-right{
+        font-size: 16px;
+    }
+    .title-web{
+        font-size: calc(2.125rem + .9vw);;
+    }
+  }
